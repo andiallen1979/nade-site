@@ -5,7 +5,7 @@ dev-util/vulkan-tools
 media-video/pipewire
 media-video/wireplumber
 games-util/mangohud
-sys-process/earlyoom
+sys-apps/earlyoom
 sys-apps/zram-generator
-x11-misc/sddm
+acct-group/sddm
 sys-kernel/nade-kern-evlav:618
