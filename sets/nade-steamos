@@ -1,0 +1,13 @@
+acct-group/sddm
+dev-util/vulkan-tools
+games-util/mangohud
+gui-apps/sddm
+gui-wm/gamescope
+kde-plasma/plasma-meta
+media-libs/mesa
+media-libs/vulkan-loader
+media-video/pipewire
+media-video/wireplumber
+sys-apps/earlyoom
+sys-apps/zram-generator
+sys-kernel/nade-kern-evlav:618
