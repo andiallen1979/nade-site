@@ -1,0 +1,6 @@
+media-video/pipewire sound-server echo-cancel extra pipewire-alsa
+media-sound/pulseaudio -daemon
+media-libs/mesa vulkan vulkan-overlay vaapi vdpau wayland X llvm zstd abi_x86_32
+media-libs/vulkan-loader abi_x86_32
+gui-wm/gamescope pipewire
+sys-apps/systemd boot policykit

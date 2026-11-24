@@ -1,0 +1,3 @@
+VIDEO_CARDS="amdgpu radeonsi"
+INPUT_DEVICES="libinput evdev"
+USE="wayland X vulkan opengl pipewire pipewire-alsa sound-server bluetooth networkmanager udev dbus acl caps nls pam seccomp ssl threads zstd"

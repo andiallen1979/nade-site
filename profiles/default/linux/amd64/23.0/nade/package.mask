@@ -1,0 +1,4 @@
+# Block SteamOS dual-slot A/B and read-only immutability tooling
+sys-apps/steamos-atomupd
+sys-apps/steamos-readonly
+sys-apps/rauc
