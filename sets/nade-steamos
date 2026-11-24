@@ -1,0 +1,11 @@
+gui-wm/gamescope
+media-libs/mesa
+media-libs/vulkan-loader
+dev-util/vulkan-tools
+media-video/pipewire
+media-video/wireplumber
+games-util/mangohud
+sys-process/earlyoom
+sys-apps/zram-generator
+x11-misc/sddm
+sys-kernel/nade-kern-evlav:618

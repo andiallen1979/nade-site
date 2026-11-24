@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare
+DESCRIPTION=Valve SteamOS Neptune 6.18 kernel sources (clean evlav repack)
+EAPI=8
+HOMEPAGE=https://github.com/andiallen1979/nade-site
+IUSE=symlink
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=sys-devel/bc dev-util/pahole virtual/libelf
+RESTRICT=binchecks strip mirror test
+SLOT=618
+SRC_URI=https://github.com/andiallen1979/nade-site/releases/download/distfiles/nade-kern-evlav-6.18.53.tar.xz
+_md5_=71da2afb490f981ae51335284ffbcc61
