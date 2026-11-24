@@ -7,6 +7,8 @@ app-alternatives/awk:busybox - Symlink to sys-apps/busybox
 app-alternatives/awk:gawk - Symlink to sys-apps/gawk
 app-alternatives/awk:mawk - Symlink to sys-apps/mawk (warning: mawk is not fully POSIX-compliant)
 app-alternatives/awk:nawk - Symlink to sys-apps/nawk
+app-alternatives/bc:gh - Symlink to bc-gh from sci-calculators/bc-gh
+app-alternatives/bc:gnu - Symlink to GNU bc (sys-devel/bc)
 app-alternatives/bzip2:lbzip2 - Symlink to app-arch/lbzip2.
 app-alternatives/bzip2:pbzip2 - Symlink to app-arch/pbzip2.
 app-alternatives/bzip2:reference - Symlink to app-arch/bzip2.
@@ -77,6 +79,7 @@ app-text/mandoc:system-man - set as the default man provider
 app-text/xmlto:text - Support conversion from XML to plain text
 dev-build/cmake:dap - Build debugger for CMake with Debug Adapter Protocol support via dev-cpp/cppdap
 dev-build/meson:test-full - pull in dependencies to run all tests
+dev-cpp/abseil-cpp:test-helpers - Build libraries that you can use to write tests against Abseil code.
 dev-cpp/eigen:adolc - Add test support for Adolc (sci-libs/adolc)
 dev-cpp/eigen:blas - Build the Eigen Blas library
 dev-cpp/eigen:boost - Add test support for Boost.Multiprecision (dev-libs/boost)
@@ -99,6 +102,8 @@ dev-cpp/eigen:umfpack - Add test support for UMFPACK (sci-libs/umfpack)
 dev-db/sqlite:secure-delete - Enable overwriting of deleted content with zeros by default (http://sqlite.org/pragma.html#pragma_secure_delete), causing some performance penalty
 dev-db/sqlite:test-full - Run the full release test suite.
 dev-db/sqlite:tools - Install additional tools, among which are included: sqlite3-analyzer, sqlite3-changeset, sqlite3-db-dump, sqlite3-diff, sqlite3-rbu, sqlite3-expert and others.
+dev-lang/lua:deprecated - make deprecated data structures/routines available
+dev-lang/luajit:lua52compat - Enable some upwards-compatible features from Lua 5.2 that are unlikely to break existing code.
 dev-lang/python:bluetooth - Build Bluetooth protocol support in socket module
 dev-lang/python:ensurepip - Install the ensurepip module that uses bundled wheels to bootstrap pip and setuptools (if disabled, it will be only possible to use venv `--without-pip`)
 dev-lang/python:jit - Enable experimental Just-In-Time compilation support.
@@ -162,6 +167,7 @@ dev-python/cython:test-full - Run test suite in full via additional (large) test
 dev-python/pillow:imagequant - Build with Image Quantization Library support
 dev-python/pillow:raqm - Support setting text direction, language or font features. Requires media-libs/raqm.
 dev-util/pkgconf:native-symlinks - Install generic symlinks like pkgconf and pkg-config. If this flag is disabled, only CHOST-prefixed pkg-config executables will be available to end users and ebuilds.
+dev-util/vulkan-tools:cube - Build the cube/cubepp demos
 dev-vcs/git:cgi - Install gitweb too
 dev-vcs/git:curl - Support fetching and pushing (requires webdav too) over http:// and https:// protocols
 dev-vcs/git:gpg - Pull in gnupg for signing -- without gnupg, attempts at signing will fail at runtime!
@@ -173,6 +179,132 @@ dev-vcs/git:safe-directory - Respect the safe.directory setting
 dev-vcs/git:subversion - Include git-svn for dev-vcs/subversion support
 dev-vcs/git:tk - Include the 'gitk' and 'git gui' tools
 dev-vcs/git:webdav - Adds support for push'ing to HTTP/HTTPS repositories via DAV
+games-util/mangohud:mangoapp - Build and install mangoapp and mangoapp layer
+games-util/mangohud:mangohudctl - Build and install mangohudctl
+games-util/mangohud:mangoplot - Install mangoplot python script
+games-util/mangohud:next - Build and install server/client rewrite
+games-util/mangohud:test - Run mangohud tests
+games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
+gnome-base/librsvg:tools - Build svg viewer tool
+gui-libs/libdecor:dbus - Enable dbus to query current cursor theme
+gui-libs/libdecor:examples - Build and install examples
+gui-libs/libdecor:gtk - Build GTK plugin
+gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
+gui-libs/wlroots:drm - Enable Direct Rendering Management
+gui-libs/wlroots:libinput - Enable support for input devices via dev-libs/libinput
+gui-libs/wlroots:liftoff - Enable support for libliftoff KMS plane backend
+gui-libs/wlroots:session - Enable session support (is required for DRM and libinput)
+gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
+gui-libs/wlroots:xcb-errors - Better error reporting when using xwayland
+gui-wm/gamescope:libei - Enable emulated input using dev-libs/libei
+gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
+gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
+kde-frameworks/kcompletion:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kconfig:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
+kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metadata
+kde-frameworks/kfilemetadata:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
+kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kimageformats:eps - Support the EPS graphics file format
+kde-frameworks/kio:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
+kde-frameworks/kitemviews:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/knewstuff:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/knewstuff:opds - Enable support for the Open Publication Distribution System via kde-frameworks/syndication
+kde-frameworks/kplotting:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
+kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kuserfeedback:tools - Build application console and CLI binary
+kde-frameworks/kwallet:minimal - Do not pull in kde-frameworks/kwallet-runtime runtime components
+kde-frameworks/kwallet-runtime:gpg - Support wallets with GnuPG encryption in addition to the default blowfish-encrypted file
+kde-frameworks/kwallet-runtime:legacy-kwallet - Support KWallet D-Bus API for applications still using it
+kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
+kde-frameworks/prison:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
+kde-frameworks/purpose:webengine - Enable support for system-wide defined KAccounts
+kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
+kde-frameworks/sonnet:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
+kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
+kde-plasma/discover:firmware - Enable support for firmware upgrades using sys-apps/fwupd
+kde-plasma/discover:flatpak - Enable support for flatpak repositories using sys-apps/flatpak
+kde-plasma/discover:snap - Enable support for snap packages using app-containers/snapd
+kde-plasma/discover:webengine - Enable webflow support using dev-qt/qtwebview and dev-qt/qtwebengine instead of default URL handler
+kde-plasma/kdeplasma-addons:alternate-calendar - Support alternate calendar systems (currently Chinese or Indian) via dev-libs/icu
+kde-plasma/kdeplasma-addons:led - Synchronizes device LEDs with the Plasma accent color (ultimately requires rust)
+kde-plasma/kdeplasma-addons:share - Enable applet for quickly sharing data to a variety of sources
+kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applets using dev-qt/qtwebengine
+kde-plasma/kinfocenter:usb - Show USB device information
+kde-plasma/ksystemstats:networkmanager - Enable improved backend for Network statistics using kde-frameworks/networkmanager-qt
+kde-plasma/kwin:X - Enable ability to support native X11 applications via x11-base/xwayland
+kde-plasma/kwin:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
+kde-plasma/kwin:gamepad - Support using game controllers as input devices
+kde-plasma/kwin:lock - Enable screen locking via kde-plasma/kscreenlocker
+kde-plasma/kwin:screencast - Enable screencast portal using media-video/pipewire
+kde-plasma/kwin:shortcuts - Enable global shortcuts support via kde-plasma/kglobalacceld
+kde-plasma/kwin-x11:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
+kde-plasma/kwin-x11:lock - Enable screen locking via kde-plasma/kscreenlocker
+kde-plasma/kwin-x11:nightlight - Enable night light support via kde-plasma/knighttime
+kde-plasma/kwin-x11:shortcuts - Enable global shortcuts support via kde-plasma/kglobalacceld
+kde-plasma/libplasma:activities - Enable support for KDE Activities
+kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
+kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
+kde-plasma/plasma-desktop:screencast - Enable screencast portal thumbnails using kde-plasma/kpipewire
+kde-plasma/plasma-desktop:sdl - Enable gamepad support using media-libs/libsdl2
+kde-plasma/plasma-desktop:webengine - Build the OpenDesktop integration plugin
+kde-plasma/plasma-firewall:firewalld - Build net-firewall/firewalld backend
+kde-plasma/plasma-firewall:ufw - Build net-firewall/ufw backend
+kde-plasma/plasma-integration:X - Enable support for X11 applications (XWayland)
+kde-plasma/plasma-login-sessions:X - Install X11 session file for Display Managers (default is Wayland if both enabled)
+kde-plasma/plasma-login-sessions:wayland - Install Wayland session file for Display Managers
+kde-plasma/plasma-meta:X - Enable X window manager support via kde-plasma/kwin-x11 (only until and including Plasma 6.7)
+kde-plasma/plasma-meta:backup - Pull in kde-plasma/kup for an integrated backup/restore solution
+kde-plasma/plasma-meta:browser-integration - Enable integration with Chrome/Firefox with browser extensions
+kde-plasma/plasma-meta:crash-handler - Pull in kde-plasma/drkonqi for assisted upstream crash reports
+kde-plasma/plasma-meta:crypt - Pull in kde-plasma/plasma-vault for encrypted vaults integration
+kde-plasma/plasma-meta:discover - Pull in resources management GUI; a centralised GHNS alternative and optional sys-apps/fwupd frontend
+kde-plasma/plasma-meta:display-manager - Pull in a graphical display manager
+kde-plasma/plasma-meta:firewall - Pull in kde-plasma/plasma-firewall for system firewall administration
+kde-plasma/plasma-meta:flatpak - Pull in kde-plasma/flatpak-kcm for flatpak permissions administration
+kde-plasma/plasma-meta:grub - Pull in Breeze theme for sys-boot/grub
+kde-plasma/plasma-meta:gtk - Enable Breeze widget style and system settings module for GTK+
+kde-plasma/plasma-meta:kwallet - Enable support for KWallet auto-unlocking via kde-plasma/kwallet-pam
+kde-plasma/plasma-meta:oxygen-theme - Pull in Oxygen icons, sound theme and visual style for KDE Plasma
+kde-plasma/plasma-meta:plymouth - Pull in Breeze theme for sys-boot/plymouth
+kde-plasma/plasma-meta:pulseaudio - Install Plasma applet for PulseAudio volume management
+kde-plasma/plasma-meta:sddm - Pull in the gui-apps/sddm display manager and system settings module
+kde-plasma/plasma-meta:sdk - Pull in kde-plasma/plasma-sdk for Plasma development
+kde-plasma/plasma-meta:smart - Pull in kde-plasma/plasma-disks for disk health monitoring
+kde-plasma/plasma-meta:thunderbolt - Pull in kde-plasma/plasma-thunderbolt control center module
+kde-plasma/plasma-meta:unsupported - Allow packages that are known to ruin runtime experience ** DO NOT FILE BUGS WITH THIS ENABLED **
+kde-plasma/plasma-meta:virtualkeyboard - Pull in kde-plasma/plasma-keyboard
+kde-plasma/plasma-meta:wacom - Pull in kde-plasma/wacomtablet control center module
+kde-plasma/plasma-meta:wallpapers - Install wallpapers for the Plasma Workspace
+kde-plasma/plasma-meta:webengine - Use kde-apps/khelpcenter to access the locally installed KDE Help System Handbook
+kde-plasma/plasma-meta:xwayland - Enable Wayland windows screensharing to XWayland applications via gui-apps/xwaylandvideobridge
+kde-plasma/plasma-nm:openconnect - Build support for the OpenConnect VPN client
+kde-plasma/plasma-nm:teamd - Enable Teamd control support
+kde-plasma/plasma-workspace:appstream - Enable AppStream software metadata support
+kde-plasma/plasma-workspace:flatpak - Enable support for flatpaks notifications using sys-apps/flatpak
+kde-plasma/plasma-workspace:ksysguard - Enable device notifier and system monitor applets as well as terminate applications runner
+kde-plasma/plasma-workspace:networkmanager - Enable support for location-based time zone changes
+kde-plasma/plasma-workspace:policykit - Enable locale generation and Users KCM using sys-auth/polkit and sys-apps/accountsservice
+kde-plasma/plasma-workspace:screencast - Enable camera indicator applet (requires media-video/pipewire at runtime)
+kde-plasma/plasma-workspace:telemetry - Enable User Feedback control module for kde-plasma/systemsettings
+kde-plasma/plasma-workspace:wallpaper-metadata - Show metadata for image wallpaper plugin using kde-apps/libkexiv2
+kde-plasma/plasma5support:activities - Enable kactivities support
+kde-plasma/plasma5support:ksysguard - Enable device notifications dataengine using kde-plasma/libksysguard
+kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
+kde-plasma/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
+kde-plasma/union:tools - Build tools that are useful for development
+kde-plasma/union:widgets - Build QtWidgets output that uses kde-plasma/breeze as the base by default
+llvm-core/llvm:binutils-plugin - Build the binutils plugin
+llvm-core/llvm:debuginfod - Install llvm-debuginfod (requires net-misc/curl and dev-cpp/cpp-httplib)
+llvm-core/llvm:doc - Build and install the HTML documentation and regenerate the man pages
+llvm-core/llvm:exegesis - Enable performance counter support for llvm-exegesis tool that can be used to measure host machine instruction characteristics
+llvm-core/llvm:z3 - Enable support for sci-mathematics/z3 constraint solver
+llvm-runtimes/libclc:spirv - Build SPIRV targets
 media-fonts/liberation-fonts:fontforge - Use media-gfx/fontforge to build fonts from source
 media-libs/freetype:adobe-cff - Use Adobe CFF as default font-renderer
 media-libs/freetype:bzip2 - Support bzip2 compressed PCF fonts.
@@ -180,7 +312,69 @@ media-libs/freetype:cleartype-hinting - Bytecode hinting mode for TrueType fonts
 media-libs/freetype:fontforge - Install internal headers required for TrueType debugger in media-gfx/fontforge (built with USE=truetype-debugger)
 media-libs/freetype:harfbuzz - Use media-libs/harfbuzz for auto-hinting OpenType fonts.
 media-libs/freetype:utils - Install utilities and examples from ft2demos
+media-libs/glew:egl-only - Enable EGL support and disable X11 support
+media-libs/harfbuzz:experimental - Enable experimental APIs
+media-libs/harfbuzz:glib - Enable dev-libs/glib unicode functions
+media-libs/harfbuzz:graphite - Enable media-gfx/graphite2 complementary shaper
+media-libs/imgui:allegro5 - Enable allegro backend and renderer
+media-libs/imgui:glfw - Enable glfw backend
+media-libs/imgui:opengl - Enable opengl renderer
+media-libs/imgui:sdl2 - Enable SDL2 backend
+media-libs/imgui:sdl2-renderer - Enable SDL2 renderer backend
+media-libs/imgui:sdl3 - Enable SDL3 backend
+media-libs/imgui:sdl3-renderer - Enable SDL3 renderer backend
+media-libs/imgui:vulkan - Enable vulkan renderer
+media-libs/imgui:webgpu - Enable webgpu renderer backend
+media-libs/libcanberra:alsa - Enables ALSA sound driver.
+media-libs/libcanberra:gstreamer - Enables gstreamer sound driver. Not useful when alsa or pulseaudio is available.
+media-libs/libcanberra:pulseaudio - Enables PulseAudio sound driver that should be able to support positional event sounds. This is the preferred choice for best sound events experience and picked by default if compiled in and possible to use at runtime.
+media-libs/libcanberra:tdb - Enables Trivial Database support for caching purposes.
 media-libs/libpng:apng - support unofficial APNG (Animated PNG) spec
+media-libs/libsdl2:fcitx - Enable support for app-i18n/fcitx
+media-libs/libsdl2:gles1 - include OpenGL ES 1.0 support
+media-libs/libsdl2:haptic - Enable the haptic (force feedback) subsystem
+media-libs/libsdl2:ibus - Enable support for app-i18n/ibus
+media-libs/libsdl2:joystick - Control joystick support (disable at your own risk)
+media-libs/libsdl2:kms - Build the KMSDRM video driver
+media-libs/libsdl2:pipewire - Enable support for the media-video/pipewire audio backend
+media-libs/libsdl2:sndio - Enable support for the media-sound/sndio backend
+media-libs/libsdl2:sound - Control audio support (disable at your own risk)
+media-libs/libsdl2:video - Control video support (disable at your own risk)
+media-libs/libva:glx - Enable GLX backend (requires X). Provides libva-glx.so, needed only by some prebuilt binaries.
+media-libs/mesa:llvm - Enable LLVM backend for Gallium3D.
+media-libs/mesa:lm-sensors - Enable Gallium HUD lm-sensors support.
+media-libs/mesa:opencl - Enable the Rusticl Gallium OpenCL state tracker.
+media-libs/mesa:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+media-libs/mesa:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
+media-libs/mesa:virtio - Enable the experimental virtio-gpu native context backends of the freedreno, intel, panfrost, and radeonsi drivers, for use in virtual machine guests
+media-libs/mesa:wayland - Enable support for dev-libs/wayland
+media-libs/opus:custom-modes - Enable non-Opus modes, e.g. 44.1 kHz and 2^n frames
+media-libs/opus:deep-plc - Enable Deep Packet Loss Concealment (PLC)
+media-libs/opus:dred - Enable Deep REDundancy (DRED)
+media-libs/opus:osce - Enable Opus Speech Coding Enhancement (OSCE)
+media-libs/vulkan-loader:layers - Include the vulkan layers
+media-sound/lame:frontend - Build and install the 'lame' executable frontend to lame libraries.
+media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
+media-sound/liblc3:tools - Enable extra tools
+media-sound/mpg123-base:int-quality - Use rounding instead of fast truncation for integer output, where possible
+media-video/pipewire:X - Enable audible bell for X11
+media-video/pipewire:echo-cancel - Enable WebRTC-based echo canceller via media-libs/webrtc-audio-processing
+media-video/pipewire:extra - Build pw-cat/pw-play/pw-record
+media-video/pipewire:flatpak - Enable Flatpak support
+media-video/pipewire:gsettings - Use gsettings (dev-libs/glib) to read/save used modules (useful for e.g. media-sound/paprefs
+media-video/pipewire:jack-client - Install a plugin for running PipeWire as a JACK client
+media-video/pipewire:jack-sdk - Use PipeWire as JACK replacement
+media-video/pipewire:libcamera - Enable libcamera plugin via media-libs/libcamera
+media-video/pipewire:loudness - Enable loudness normalisation according to the EBU R128 standard using media-libs/libebur128
+media-video/pipewire:lv2 - Allow loading LV2 plugins via media-libs/lv2
+media-video/pipewire:modemmanager - Combined with USE=bluetooth, allows PipeWire to perform telephony on mobile devices.
+media-video/pipewire:pipewire-alsa - Install ALSA plugin, similar to media-plugins/alsa-plugins's USE=pulseaudio.
+media-video/pipewire:roc - Enable roc support for real-time audio streaming over the network, using media-libs/roc-toolkit. See https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Network#roc
+media-video/pipewire:sofa - Spatially Oriented Format for Acoustics (SOFA) support via media-libs/libmysofa
+media-video/pipewire:sound-server - Provide sound server using ALSA and bluetooth devices
+media-video/pipewire:ssl - Enable raop-sink support (needs dev-libs/openssl)
+media-video/pipewire:system-service - Install systemd unit files for running as a system service. Not recommended.
+media-video/wireplumber:system-service - Install systemd unit files for running as a system service. Not recommended.
 net-dialup/ppp:activefilter - Enables active filter support
 net-firewall/iptables:conntrack - Build against net-libs/libnetfilter_conntrack when enables the connlabel matcher
 net-firewall/iptables:netlink - Build against libnfnetlink which enables the nfnl_osf util
@@ -331,6 +525,12 @@ sys-apps/portage:ipc - Use inter-process communication between portage and runni
 sys-apps/portage:native-extensions - Compiles native "C" extensions (speedups, instead of using python backup code). Currently includes libc-locales. This should only be temporarily disabled for some bootstrapping operations. Cross-compilation is not supported.
 sys-apps/portage:rsync-verify - Enable full-tree cryptographic verification of Gentoo repository git or rsync checkouts using app-portage/gemato.
 sys-apps/portage:xattr - Preserve extended attributes (filesystem-stored metadata) when installing files. Usually only required for hardened systems.
+sys-apps/portage-nade:apidoc - Build html API documentation with sphinx-apidoc.
+sys-apps/portage-nade:gentoo-dev - Enable features required for Gentoo ebuild development.
+sys-apps/portage-nade:ipc - Use inter-process communication between portage and running ebuilds.
+sys-apps/portage-nade:native-extensions - Compiles native "C" extensions (speedups, instead of using python backup code). Currently includes libc-locales. This should only be temporarily disabled for some bootstrapping operations. Cross-compilation is not supported.
+sys-apps/portage-nade:rsync-verify - Enable full-tree cryptographic verification of Gentoo repository git or rsync checkouts using app-portage/gemato.
+sys-apps/portage-nade:xattr - Preserve extended attributes (filesystem-stored metadata) when installing files. Usually only required for hardened systems.
 sys-apps/sandbox:nnp - Enable NO_NEW_PRIVS which blocks set*id programs from gaining privileges (e.g. sudo)
 sys-apps/sed:test-full - Run expensive tests (mostly CPU intensive).
 sys-apps/shadow:su - build the su program
@@ -397,6 +597,8 @@ sys-auth/pambase:systemd - Use pam_systemd module to register user sessions in t
 sys-auth/pambase:turnstile - Use pam_turnstile module to register user sessions with turnstile.
 sys-auth/pambase:yescrypt - Switch Linux-PAM's pam_unix module to use yescrypt for passwords hashes rather than MD5. Like with USE=sha512 (see that description), this only changes the default, and hashes with other types are still supported.
 sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
+sys-auth/seatd:builtin - Enable embedded server in libseat
+sys-auth/seatd:server - Enable standalone seatd server, replacement to (e)logind
 sys-boot/grub:device-mapper - Enable support for devmapper; required for LUKS or LVM volume detection
 sys-boot/grub:efiemu - Build and install the efiemu runtimes
 sys-boot/grub:fonts - Build and install fonts for the gfxterm module
@@ -465,6 +667,9 @@ sys-kernel/installkernel:systemd-boot - Use systemd-boot's native layout by defa
 sys-kernel/installkernel:ugrd - Generate an initramfs using UGRD on each kernel installation
 sys-kernel/installkernel:uki - Install UKIs to ESP/EFI/Linux for EFI stub booting and/or bootloaders with support for auto-discovering UKIs
 sys-kernel/installkernel:ukify - Build an UKI with systemd's ukify on each kernel installation
+sys-libs/binutils-libs:64-bit-bfd - Support 64-bit targets even on 32-bit hosts (is ignored on 64-bit hosts)
+sys-libs/binutils-libs:cet - Enable Intel Control-flow Enforcement Technology.
+sys-libs/binutils-libs:multitarget - Enable all possible targets in libbfd
 sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm interfaces
 sys-libs/glibc:cet - Enable Intel Control-flow Enforcement Technology (needs binutils 2.29 and gcc 8)
 sys-libs/glibc:clang - Allow building with clang (if proper environment is set). Highly experimental. Disable to auto-force gcc usage.
@@ -509,8 +714,22 @@ sys-process/procps:skill - Build the skill and snice programs
 virtual/pkgconfig:native-symlinks - Install generic symlinks like pkgconf and pkg-config. If this flag is disabled, only CHOST-prefixed pkg-config executables will be available to end users and ebuilds.
 virtual/ssh:minimal - Prefer net-misc/dropbear over net-misc/openssh
 virtual/zlib:minizip - include the minizip library for quick and dirty zip extraction
+x11-base/xwayland:libei - Enable emulated input using dev-libs/libei
+x11-base/xwayland:unwind - Enable libunwind usage for backtraces
+x11-base/xwayland:xcsecurity - Build Security extension
 x11-libs/cairo:glib - Compile with GLib Object System support
+x11-libs/gtk+:broadway - Enable the GDK Broadway backend
+x11-libs/gtk+:cloudproviders - Enable GtkPlacesSidebar to access cloud services
+x11-libs/gtk+:colord - Use x11-misc/colord for color management in printing
+x11-libs/gtk+:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
 x11-libs/libSM:uuid - Use UUID for session identification instead of IP address and system time.
 x11-libs/libXaw:deprecated - Install deprecated Xaw6 library.
+x11-libs/libXfont2:bzip2 - Support bzip2 compressed PCF fonts.
+x11-libs/libXfont2:truetype - Use media-libs/freetype for font rasterization.
+x11-libs/libdrm:tools - Install optional tests and tools
 x11-libs/libxcb:xkb - Enable the XCB keyboard extension
+x11-libs/pango:X - Build and install the legacy pangoxft library
+x11-libs/pango:examples - Install source code examples
+x11-libs/pango:libthai - Support Thai line-breaking with dev-libs/libthai
+x11-libs/pango:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
 x11-libs/pixman:loongson2f - Enable Loongson2f MMI optimizations.
