@@ -1,7 +1,0 @@
-(add-to-list 'load-path "@SITELISP@")
-(autoload 'xr "xr")
-(autoload 'xr-skip-set "xr")
-(autoload 'xr-lint "xr")
-(autoload 'xr-skip-set-lint "xr")
-(autoload 'xr-pp "xr")
-(autoload 'xr-skip-set-pp "xr")

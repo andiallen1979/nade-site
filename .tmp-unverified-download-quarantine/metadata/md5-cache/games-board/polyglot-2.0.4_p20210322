@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=Protocol adapter to run UCI chess engines under xboard
-EAPI=8
-HOMEPAGE=https://hgm.nubati.net/
-KEYWORDS=~amd64 ~arm64 ~x86
-LICENSE=GPL-2+
-SLOT=0
-SRC_URI=https://hgm.nubati.net/releases/polyglot-2.0.4.tar.gz https://distfiles.gentoo.org/pub/dev/ulm@gentoo.org/polyglot-2.0.4_p20210322.patch.gz
-_md5_=2576eb47a977b2e91ef1839e1b9a4943

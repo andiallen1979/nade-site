@@ -1,3 +1,0 @@
-move app-backup/kup kde-plasma/kup
-slotmove kde-plasma/kup 0 6
-move x11-misc/sddm gui-apps/sddm
