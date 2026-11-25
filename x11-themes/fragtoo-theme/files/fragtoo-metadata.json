@@ -1,0 +1,8 @@
+{
+    "KPlugin": {
+        "Authors": [{ "Name": "Fragtoo" }],
+        "Id": "Fragtoo",
+        "License": "MIT",
+        "Name": "Fragtoo (Ronan / Ruby)"
+    }
+}
