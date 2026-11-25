@@ -1,0 +1,16 @@
+:root {
+  --fragtoo-bg: #171112;
+  --fragtoo-surface: #261b1d;
+  --fragtoo-accent: #e04f3e;
+  --fragtoo-accent-alt: #f28c38;
+  --fragtoo-text: #f5ebe8;
+  --fragtoo-muted: #a68d89;
+}
+body, .GamepadUIBase {
+  background-color: var(--fragtoo-bg) !important;
+  background-image: url("file:///usr/share/fragtoo-theme/ruby.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  color: var(--fragtoo-text) !important;
+}

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+THEME_DIR="/usr/share/fragtoo-theme"
+ACTIVE_LINK="/etc/fragtoo-theme/active.css"
+
+apply_plasma_wallpaper() {
+  local img="$1"
+  if [[ -n "${DBUS_SESSION_BUS_ADDRESS:-}" ]] && command -v plasma-apply-wallpaperimage >/dev/null 2>&1; then
+    plasma-apply-wallpaperimage "${img}" >/dev/null 2>&1 || true
+  fi
+}
+
+case "${1:-}" in
+  ronan|Ronan)
+    ln -sf "${THEME_DIR}/ronan.css" "${ACTIVE_LINK}"
+    apply_plasma_wallpaper "${THEME_DIR}/ronan.png"
+    echo "Active Fragtoo theme: Ronan (light golden-hour)"
+    ;;
+  ruby|Ruby)
+    ln -sf "${THEME_DIR}/ruby.css" "${ACTIVE_LINK}"
+    apply_plasma_wallpaper "${THEME_DIR}/ruby.png"
+    echo "Active Fragtoo theme: Ruby (dark golden-hour dusk)"
+    ;;
+  *)
+    echo "Usage: fragtoo-theme [ronan|ruby]"
+    exit 1
+    ;;
+esac
